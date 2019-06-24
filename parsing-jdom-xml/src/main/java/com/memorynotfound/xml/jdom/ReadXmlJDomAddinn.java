@@ -34,6 +34,7 @@ import org.jdom2.input.SAXBuilder;
 				//reading value of children in xml
 				System.out.println("WMI : " + VIN.getChildText("WMI"));
 				System.out.println("VDS : " + VIN.getChildText("VDS"));
+				System.out.println("VDS : " + VIN.getChildText("AMENI"));
 				System.out.println("VIS : " + VIN.getChildText("VIS"));
 				Element RetourExecution = (Element) itr.next();
 				System.out.println("Code : " + RetourExecution.getChildText("Code"));
