@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<xs:schema targetNamespace="http://xml.inetpsa.com/CarterBO/DossierCoc" 
+
+	xmlns="http://xml.inetpsa.com/CarterBO/DossierCoc" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xdb="http://xmlns.oracle.com/xdb" 
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	
+	
+	<xs:simpleType name="ChaineVideType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value=""/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Integer_1_OuVideType">
+		<xs:union memberTypes="ChaineVideType">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="9" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Integer_2_OuVideType">
+		<xs:union memberTypes="ChaineVideType">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="99" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Integer_3_OuVideType">
+		<xs:union memberTypes="ChaineVideType">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="999" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Integer_4_OuVideType">
+		<xs:union memberTypes="ChaineVideType">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="9999" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+    
+     <xs:simpleType name="Integer_8_OuVideType">
+        <xs:union memberTypes="ChaineVideType">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="0"/>
+                    <xs:maxInclusive value="99999999" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+   
+   
+   	<!-- Definition des types Integer (NUMBER(x,0)) autorisés -->
+	<xs:simpleType name="IntegerOuVideType">
+		<xs:union memberTypes="xs:integer ChaineVideType"/>
+	</xs:simpleType>
+</xs:schema>
+

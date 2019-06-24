@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<DonneesVin> 
+		<VIN>
+			<WMI>VF7</WMI>
+			<VDS>3AYHZP</VDS>
+			<VIS>KJ655492</VIS>
+		</VIN>		
+		<RetourExecution>
+			<Code>15</Code>
+			<Message>ERR_VIN_INCONNU</Message>
+		</RetourExecution>
+</DonneesVin>
