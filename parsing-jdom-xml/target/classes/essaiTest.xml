@@ -1,5 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <ServiceCarter>
+	<Entete>
+		<ServiceSortant>
+			<NomServiceSortant>sB_DT_VIN</NomServiceSortant>
+		</ServiceSortant>
+	</Entete>
+	<Configuration>
+		<LangueDonnees>fr</LangueDonnees>
+		<CodePays>true</CodePays>
+		<DescriptionsDonnees>false</DescriptionsDonnees>
+	</Configuration>
 	<DonneesVin>
 		<VIN>
 			<WMI>VF7</WMI>
